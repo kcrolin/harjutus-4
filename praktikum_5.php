@@ -27,5 +27,42 @@
    <?php echo "Kas {$integer} on number? " . is_numeric($integer); ?><br>
    <?php echo "Kas {$float} on number? " . is_numeric($float); ?><br>
    
+   <h2>Jadad (array)</h2> 
+   
+   <?php
+    $numbers = array(4, 8, 15, 16, 23, 42);
+	echo $numbers[0];
+	echo "<br>";
+	echo $numbers[1];
+	echo "<br>";
+	echo $numbers[2];
+	echo "<br>";
+	echo $numbers[3];
+	echo "<br>";
+	echo $numbers[4];
+	echo "<br>";
+	echo $numbers[5];
+?>
+
+<?php $mixed = array(6, "rebane", "koer", 5.5, array("x", "y", "z"));
+echo "<br>";
+echo $mixed[2]; 
+echo "<br>";
+echo $mixed[4][2];
+$mixed[2] = "kass"; 
+$mixed[5] = "kass"; 
+$mixed[] = "veel kass"; 
+echo "<br>";
+echo $mixed;?> <br>
+
+<pre><?php echo print_r($mixed); ?></pre>
+
+ <h2>Associative arrays</h2> 
+ 
+<?php $assoc = array("first_name" => "Cärolin", "last_name" => "Karing"); ?>
+<?php echo $assoc["first_name"]; ?>
+ <?php echo $assoc["last_name"]; ?>
+ 
+ 
   </body>
 </html>
