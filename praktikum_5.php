@@ -60,9 +60,47 @@ echo $mixed;?> <br>
  <h2>Associative arrays</h2> 
  
 <?php $assoc = array("first_name" => "Cärolin", "last_name" => "Karing"); ?>
-<?php echo $assoc["first_name"]; ?>
+<?php echo $assoc["first_name"]; ?><br>
  <?php echo $assoc["last_name"]; ?>
  
+ <?php $assoc["first_name"] = "Karin"; ?>
+<?php $assoc["last_name"] = "X" ?><br>
+<?php echo $assoc["first_name"]; ?><br>
+ <?php echo $assoc["last_name"]; ?>
+<?php $assoc["email"] = "carolin.karing@khk.ee" ?><br> 
+<?php echo "Minu nimi on " .$assoc["first_name"] . " " . $assoc["last_name"]. ". " . "Minu e-post on " . $assoc["email"]; ?>
  
+  <h2>Array functions</h2> 
+  
+  <?php $numbers_2 = array(8,23,15,42,16,4);
+
+echo count($numbers_2); 
+echo "<br>";
+echo max($numbers_2);
+echo "<br>";
+echo min($numbers_2);
+echo "<br>"
+ ?>
+ 
+<?php sort($numbers_2);
+print_r($numbers_2);
+ ?>
+ 
+ <br>
+ 
+ <?php rsort($numbers_2);
+print_r($numbers_2);
+ ?> 
+  
+  <br>
+ 
+ <?php echo $num_string = implode(" ja ",$numbers_2);
+
+ ?>  
+ 
+  <br>
+ 
+<?php print_r(explode(" ja ", $num_string)); ?>
+  
   </body>
 </html>
